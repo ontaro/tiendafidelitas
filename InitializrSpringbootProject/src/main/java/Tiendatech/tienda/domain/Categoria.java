@@ -12,42 +12,6 @@ import lombok.*;
 @Entity
 @Table(name = "categoria")        
 public class Categoria implements Serializable{
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
-
-    public Integer getIdCategoria() {
-        return idCategoria;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public String getRutaImagen() {
-        return rutaImagen;
-    }
-
-    public boolean isActivo() {
-        return activo;
-    }
-
-    public void setIdCategoria(Integer idCategoria) {
-        this.idCategoria = idCategoria;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public void setRutaImagen(String rutaImagen) {
-        this.rutaImagen = rutaImagen;
-    }
-
-    public void setActivo(boolean activo) {
-        this.activo = activo;
-    }
     
     private static final long serialVersionUID = 1L;
     

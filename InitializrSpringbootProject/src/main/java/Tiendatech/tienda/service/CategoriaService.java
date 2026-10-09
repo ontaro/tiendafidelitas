@@ -18,8 +18,8 @@ import org.springframework.web.multipart.MultipartFile;
 public class CategoriaService {
 
     // El repositorio es final para asegurar la inmutabilidad
-    private final CategoriaRepository categoriaRepository = null;    
-    private final FirebaseStorageService firebaseStorageService = null;
+    private final CategoriaRepository categoriaRepository;    
+    private final FirebaseStorageService firebaseStorageService;
 
     @Transactional(readOnly = true)
     public List<Categoria> getCategorias(boolean activo) {
