@@ -1,7 +1,8 @@
-<!-- Fragmento #1 que irá en el head de todas las páginas, así se incluye todo lo necesario de configuración-->
+
 <head th:fragment="head">
     <title>TechShop</title>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png"/>
     <link rel="icon" type="image/png" sizes="96x96" href="/fav/favicon-96x96.png"/>
@@ -9,10 +10,12 @@
     <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
     <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
     <script th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/js/rutinas.js}"></script>
 </head>
 
 
-<!-- Fragmento #2  define el encabezado de las páginas, en concreto el menú y enlaces rápidos -->
+
 <header th:fragment="header" class="header">
     <nav class="navbar navbar-expand-sm p-0">
         <div class="container">                    
@@ -59,7 +62,6 @@
                 </ul>
                 <div id="resultBlock">
                 </div>         
-
             </div>
         </div>
     </nav>
@@ -74,7 +76,7 @@
     </section>
 </header>
 
-<!-- Fragmento #3  define el footer de las páginas, aparte de esto se podria incluir enlaces a redes socilaes y demás -->
+
 <footer th:fragment="footer" class="p-2 mt-5 bg-info text-white">
     <p class="lead text-center">[[#{plantilla.derechos}]] &COPY;</p>
 </footer>
