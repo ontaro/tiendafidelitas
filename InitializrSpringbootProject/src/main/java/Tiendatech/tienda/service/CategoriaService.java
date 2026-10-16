@@ -45,7 +45,7 @@ public class CategoriaService {
                 categoria.setRutaImagen(rutaImagen);
                 categoriaRepository.save(categoria);
             } catch (IOException e) {
-                //log.warn("No fue posible almacenar la imagen de la categoria {}",categoria.getIdCategoria(),e);
+                log.warn("No fue posible almacenar la imagen de la categoria {}",categoria.getIdCategoria(),e);
             }
         }
     }
